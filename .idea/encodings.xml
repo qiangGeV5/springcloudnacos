@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/herring-alibaba/herring-nacos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-alibaba/herring-nacos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-alibaba/herring-seata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-common/herring-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-security/herring-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-security/herring-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-security/herring-oauth2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-security/herring-oauth2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-services/herring-member/herring-member-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-services/herring-member/herring-member-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-services/herring-member/herring-member-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-services/herring-orders/herring-orders-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-services/herring-orders/herring-orders-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-services/herring-orders/herring-orders-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-services/herring-product/herring-product-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-services/herring-product/herring-product-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/herring-services/herring-product/herring-product-service/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/herring.iml" filepath="$PROJECT_DIR$/herring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-alibaba/herring-alibaba.iml" filepath="$PROJECT_DIR$/herring-alibaba/herring-alibaba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-base/herring-base.iml" filepath="$PROJECT_DIR$/herring-services/herring-base/herring-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-base-tx/herring-base-tx.iml" filepath="$PROJECT_DIR$/herring-services/herring-base-tx/herring-base-tx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-common/herring-common.iml" filepath="$PROJECT_DIR$/herring-common/herring-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-common/herring-feign/herring-feign.iml" filepath="$PROJECT_DIR$/herring-common/herring-feign/herring-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-security/herring-gateway/herring-gateway.iml" filepath="$PROJECT_DIR$/herring-security/herring-gateway/herring-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-member/herring-member.iml" filepath="$PROJECT_DIR$/herring-services/herring-member/herring-member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-member/herring-member-client/herring-member-client.iml" filepath="$PROJECT_DIR$/herring-services/herring-member/herring-member-client/herring-member-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-member/herring-member-model/herring-member-model.iml" filepath="$PROJECT_DIR$/herring-services/herring-member/herring-member-model/herring-member-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-member/herring-member-service/herring-member-service.iml" filepath="$PROJECT_DIR$/herring-services/herring-member/herring-member-service/herring-member-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-common/herring-mysql/herring-mysql.iml" filepath="$PROJECT_DIR$/herring-common/herring-mysql/herring-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-alibaba/herring-nacos/herring-nacos.iml" filepath="$PROJECT_DIR$/herring-alibaba/herring-nacos/herring-nacos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-security/herring-oauth2/herring-oauth2.iml" filepath="$PROJECT_DIR$/herring-security/herring-oauth2/herring-oauth2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-orders/herring-orders.iml" filepath="$PROJECT_DIR$/herring-services/herring-orders/herring-orders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-orders/herring-orders-client/herring-orders-client.iml" filepath="$PROJECT_DIR$/herring-services/herring-orders/herring-orders-client/herring-orders-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-orders/herring-orders-model/herring-orders-model.iml" filepath="$PROJECT_DIR$/herring-services/herring-orders/herring-orders-model/herring-orders-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-orders/herring-orders-service/herring-orders-service.iml" filepath="$PROJECT_DIR$/herring-services/herring-orders/herring-orders-service/herring-orders-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-product/herring-product.iml" filepath="$PROJECT_DIR$/herring-services/herring-product/herring-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-product/herring-product-client/herring-product-client.iml" filepath="$PROJECT_DIR$/herring-services/herring-product/herring-product-client/herring-product-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-product/herring-product-model/herring-product-model.iml" filepath="$PROJECT_DIR$/herring-services/herring-product/herring-product-model/herring-product-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-product/herring-product-service/herring-product-service.iml" filepath="$PROJECT_DIR$/herring-services/herring-product/herring-product-service/herring-product-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-common/herring-redis/herring-redis.iml" filepath="$PROJECT_DIR$/herring-common/herring-redis/herring-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-alibaba/herring-rocketmq/herring-rocketmq.iml" filepath="$PROJECT_DIR$/herring-alibaba/herring-rocketmq/herring-rocketmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-alibaba/herring-seata/herring-seata.iml" filepath="$PROJECT_DIR$/herring-alibaba/herring-seata/herring-seata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-security/herring-security.iml" filepath="$PROJECT_DIR$/herring-security/herring-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-alibaba/herring-sentinel/herring-sentinel.iml" filepath="$PROJECT_DIR$/herring-alibaba/herring-sentinel/herring-sentinel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-services/herring-services.iml" filepath="$PROJECT_DIR$/herring-services/herring-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-skywalking/herring-skywalking.iml" filepath="$PROJECT_DIR$/herring-skywalking/herring-skywalking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herring-common/herring-tools/herring-tools.iml" filepath="$PROJECT_DIR$/herring-common/herring-tools/herring-tools.iml" />
+    </modules>
+  </component>
+</project>

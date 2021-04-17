@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="herring-orders-client" />
+        <module name="herring-base" />
+        <module name="herring-feign" />
+        <module name="herring-orders-service" />
+        <module name="herring-nacos" />
+        <module name="herring-product-model" />
+        <module name="herring-mysql" />
+        <module name="herring-oauth2" />
+        <module name="herring-member-model" />
+        <module name="herring-product-client" />
+        <module name="herring-rocketmq" />
+        <module name="herring-member-service" />
+        <module name="herring-redis" />
+        <module name="herring-tools" />
+        <module name="herring-member-client" />
+        <module name="herring-seata" />
+        <module name="herring-gateway" />
+        <module name="herring-skywalking" />
+        <module name="herring-base-tx" />
+        <module name="herring-orders-model" />
+        <module name="herring-sentinel" />
+        <module name="herring-product-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="herring" target="1.8" />
+      <module name="herring-alibaba" target="1.8" />
+      <module name="herring-base" target="1.8" />
+      <module name="herring-base-tx" target="1.8" />
+      <module name="herring-common" target="1.8" />
+      <module name="herring-feign" target="1.8" />
+      <module name="herring-gateway" target="1.8" />
+      <module name="herring-member" target="1.8" />
+      <module name="herring-member-client" target="1.8" />
+      <module name="herring-member-model" target="1.8" />
+      <module name="herring-member-service" target="1.8" />
+      <module name="herring-mysql" target="1.8" />
+      <module name="herring-nacos" target="1.8" />
+      <module name="herring-oauth2" target="1.8" />
+      <module name="herring-orders" target="1.8" />
+      <module name="herring-orders-client" target="1.8" />
+      <module name="herring-orders-model" target="1.8" />
+      <module name="herring-orders-service" target="1.8" />
+      <module name="herring-product" target="1.8" />
+      <module name="herring-product-client" target="1.8" />
+      <module name="herring-product-model" target="1.8" />
+      <module name="herring-product-service" target="1.8" />
+      <module name="herring-redis" target="1.8" />
+      <module name="herring-rocketmq" target="1.8" />
+      <module name="herring-seata" target="1.8" />
+      <module name="herring-security" target="1.8" />
+      <module name="herring-sentinel" target="1.8" />
+      <module name="herring-services" target="1.8" />
+      <module name="herring-skywalking" target="1.8" />
+      <module name="herring-tools" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
