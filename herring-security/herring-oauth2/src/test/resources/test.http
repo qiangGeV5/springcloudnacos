@@ -1,0 +1,63 @@
+# jwt-token
+
+#### /oauth/token?grant_type=password
+POST http://localhost:8080/oauth2-service/oauth/token?grant_type=password&username=admin&password=123456&client_id=app-client&client_secret=client-secret-8888&scope=all
+Accept: */*
+Cache-Control: no-cache
+
+#{
+#  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTI0MDc3MDcsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiI1Zjg1ZTJiYy04OGFjLTQwYjEtODZkZC01MzNjYmE0YWQxMjciLCJjbGllbnRfaWQiOiJtZW1iZXItc2VydmljZSIsInNjb3BlIjpbImFsbCJdfQ.t-5ybKYHXlVBw92idAfreIu73mvNATAIB5M03sSGZIs",
+#  "token_type": "bearer",
+#  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJhdGkiOiI1Zjg1ZTJiYy04OGFjLTQwYjEtODZkZC01MzNjYmE0YWQxMjciLCJleHAiOjE2MTI0NDAxMDcsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iXSwianRpIjoiYTYwY2Q0ZDktOWZhNy00ZTNkLTk2ZDItMWQ4NTViZDEwYzRiIiwiY2xpZW50X2lkIjoibWVtYmVyLXNlcnZpY2UifQ.CjyTZK5g4-D9p-usUNB4HrRRIR2FLc74JI4pkzOIDx8",
+#  "expires_in": 3599,
+#  "scope": "all",
+#  "jti": "5f85e2bc-88ac-40b1-86dd-533cba4ad127"
+#}
+
+#### /oauth/token?grant_type=refresh_token
+POST http://localhost:8080/oauth2-service/oauth/token?grant_type=refresh_token&refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJhdGkiOiI1Zjg1ZTJiYy04OGFjLTQwYjEtODZkZC01MzNjYmE0YWQxMjciLCJleHAiOjE2MTI0NDAxMDcsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iXSwianRpIjoiYTYwY2Q0ZDktOWZhNy00ZTNkLTk2ZDItMWQ4NTViZDEwYzRiIiwiY2xpZW50X2lkIjoibWVtYmVyLXNlcnZpY2UifQ.CjyTZK5g4-D9p-usUNB4HrRRIR2FLc74JI4pkzOIDx8&client_id=app-client&client_secret=client-secret-8888
+Accept: */*
+Cache-Control: no-cache
+
+#{
+#  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTI0MDc4NjIsInVzZXJfbmFtZSI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiJdLCJqdGkiOiIwYzYxNWY1MS0yN2M1LTQ1MWUtOGIwYS01ODYxY2ZmODdiYWMiLCJjbGllbnRfaWQiOiJtZW1iZXItc2VydmljZSIsInNjb3BlIjpbImFsbCJdfQ.ikbbD9smKIKutQLW7AvO8QSZhOyUo9YmUll4FQafbRU",
+#  "token_type": "bearer",
+#  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJhdGkiOiIwYzYxNWY1MS0yN2M1LTQ1MWUtOGIwYS01ODYxY2ZmODdiYWMiLCJleHAiOjE2MTI0NDAxMDcsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iXSwianRpIjoiYTYwY2Q0ZDktOWZhNy00ZTNkLTk2ZDItMWQ4NTViZDEwYzRiIiwiY2xpZW50X2lkIjoibWVtYmVyLXNlcnZpY2UifQ.kD5JjPideSw76ho5_tAIcN9Da6_4yDvFlBGWjvhTyuk",
+#  "expires_in": 3599,
+#  "scope": "all",
+#  "jti": "0c615f51-27c5-451e-8b0a-5861cff87bac"
+#}
+
+#### /info/jwt
+GET http://localhost:8080/info/jwt
+Accept: */*
+Cache-Control: no-cache
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiZ2F0ZXdheS1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6ImFkbWluIiwiand0LWV4dCI6IkpXVCDmianlsZXkv6Hmga8iLCJzY29wZSI6WyJhbGwiXSwiZXhwIjoxNjEyNTE1MzYwLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImp0aSI6ImEyZTQzYmVkLTRkODAtNDBlMy05YTdhLTUwNGI1YjRiZTNhOCIsImNsaWVudF9pZCI6ImFwcC1jbGllbnQifQ.F3wsokmF5TAmPheuyk6bPdVFp6jvmGBFVEJtI0mQtGg
+
+#{
+#  "user_name": "admin",
+#  "jwt-ext": "JWT 扩展信息",
+#  "scope": [
+#    "all"
+#  ],
+#  "exp": 1612420680,
+#  "authorities": [
+#    "ROLE_ADMIN"
+#  ],
+#  "jti": "69a04382-6140-46d5-b5c2-a78ea0fde5fb",
+#  "client_id": "app-client"
+#}
+
+####
+
+GET http://localhost:8080/member-service/api/member/hello
+Accept: */*
+Cache-Control: no-cache
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiZ2F0ZXdheS1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6ImFkbWluIiwiand0LWV4dCI6IkpXVCDmianlsZXkv6Hmga8iLCJzY29wZSI6WyJhbGwiXSwiZXhwIjoxNjEyNjY4ODc5LCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImp0aSI6ImM1Y2ExNDEwLWIxZGUtNGI0OS04M2EwLWQyYzRiNzNhNGNiNyIsImNsaWVudF9pZCI6ImFwcC1jbGllbnQifQ.rlDNIU23_l1z25aI8IrcS1btnR6s9-C7DnIlgjCM3yQ
+
+####
+
+GET http://localhost:8080/member-service/api/member/update
+Accept: */*
+Cache-Control: no-cache
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiZ2F0ZXdheS1zZXJ2aWNlIl0sInVzZXJfbmFtZSI6ImFkbWluIiwiand0LWV4dCI6IkpXVCDmianlsZXkv6Hmga8iLCJzY29wZSI6WyJhbGwiXSwiZXhwIjoxNjEzOTcwMDk2LCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl0sImp0aSI6IjU4MDY5ODlhLWUyNDQtNGQyMy04YTU5LTBjODRiYzE0Yjk5OSIsImNsaWVudF9pZCI6ImFwcC1jbGllbnQifQ.EP4acam0tkJQ9kSGRGk_mQsfi1y4M_hhiBL0H931v60

@@ -1,0 +1,56 @@
+package com.herring.member;
+
+/*
+@(#)herring   2020-12-22
+ 
+Copyright (c) 2011-2020 杭州湖畔网络技术有限公司 
+保留所有权利 
+本软件为杭州湖畔网络技术有限公司所有及包含机密信息，须遵守其相关许可证条款进行使用。
+Copyright (c) 2011-2020 HUPUN Network Technology CO.,LTD.
+All rights reserved.
+This software is the confidential and proprietary information of HUPUN
+Network Technology CO.,LTD("Confidential Information").  You shall not
+disclose such Confidential Information and shall use it only in
+accordance with the terms of the license agreement you entered into with HUPUN.
+Website：http://www.hupun.com
+*/
+
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.herring.orders.OrdersClient;
+import com.herring.product.ProductClient;
+import io.seata.spring.annotation.GlobalTransactional;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+
+/**
+ * @author: Jackey 2020/12/22
+ */
+@Service
+public class MemberService {
+
+    @Resource
+    private MemberMapper memberMapper;
+    @Resource
+    private ProductClient productClient;
+    @Resource
+    private OrdersClient ordersClient;
+
+    @SentinelResource(value = "sayHello", fallback = "sayHelloFail")
+    public String sayHello() {
+        return "Hello, Member! ";
+    }
+
+    public String sayHelloFail() {
+        return "I am sorry, Member! ";
+    }
+
+    @GlobalTransactional(rollbackFor = Exception.class)
+    public int doUpdate() {
+        int result = memberMapper.update();
+        ordersClient.update();
+        productClient.update();
+        return result;
+    }
+
+}
